@@ -1,0 +1,203 @@
+@charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css");
+/* Global Styles */
+*, *:  before, *:after{
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
+.linenums li {
+    list-style-type: decimal;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+/* Masthead (Header) */
+.masthead{
+    display: table;
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.fade-carousel{
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .carousel-item{
+    height: 100vh;
+}
+.fade-carousel .carousel-indicators > li{
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+
+}
+.fade-carousel .carousel-indicators > li.active{
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+/*      Carousel Captions       */
+.fade-carousel .carousel-inner .carousel-caption{
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+    
+}
+.title-slide{
+    font-size:200%;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    color:#cccc33;
+    font-weight: 700;
+    font-size: 70px;
+}
+.text-slide{
+  font-size: 30px;
+
+}
+.bt-add{
+  display: block;
+  width: 200px;
+  padding: 20px 20px 20px 20px;
+  background-color: #f3cc29;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+.bt-add:hover{
+  background-color: inherit;
+  border: 1px solid #f3cc29;
+  transition: all 0.4s;
+  text-decoration: none;
+  color: #fff;
+}
+.fade-carousel .carousel-inner .carousel-caption{
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .active .carousel-caption {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+
+
+/*       Slides backgrounds     */
+.fade-carousel .carousel-inner .slide-1, 
+.fade-carousel .carousel-inner .slide-2,
+.fade-carousel .carousel-inner .slide-3 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.gthieu{
+  text-align: center;
+  color: black;
+  font-size: 36px;
+  font-weight: 700;
+}
+.bt-gt{
+  display: block;
+  padding: 10px 10px 10px 10px;
+  background-color: #f3cc29;
+  width: 130px;
+  text-align: center;
+  float: right;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.4s;
+}
+.bt-gt:hover{
+  background-color: inherit;
+  border: 1px solid #f3cc29;
+  text-decoration: none;
+  color: black;
+}
+.img-slide{
+  width: 100%;
+  height: 700px;
+}
+
+.gioithieu {
+    margin-top: 5%;
+}
+.img-gioithieu1{
+  overflow: hidden;
+}
+.img-gioithieu{
+  height: 302px;
+  
+}
+.img-gioithieu:hover{
+  transform: scale(1.2);
+  transition: all 0.8s;
+}
+.ket-qua{
+  background-image: url(../images-h/ket-qua.png);
+    position: relative;
+    height: 300px;
+    background-attachment: fixed;
+    
+    background-repeat: no-repeat;
+    margin-top: 5%;
+}
+.doanhso{
+  color: #fff;
+  text-align: center;
+  margin-top: 10%;
+}
+.number{
+  font-size: 40px;
+  font-weight: 700;
+
+}
+.text-nv{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.title-content{
+  margin-top: 5%;
+  font-weight: 600;
+  text-align: center;
+}
+.gach-chan{
+  border: 2px solid #f3cc29;
+  text-align: center;
+  width: 75px;
+}
